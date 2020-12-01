@@ -23,5 +23,5 @@ const  app = express();
  /////
 
  app.listen(port,'0.0.0.0',()=>{
-        console.log('El servidro esta funcionando en el puerto--> ',PORT);
+        console.log('El servidro esta funcionando en el puerto--> ',port);
  })
