@@ -10,10 +10,11 @@ const  app = express();
 
 /// para el ruteo...
  app.use('/api/revision',require('./routes/revision'))
+
  //....
 
 ///puerto d ela app
- const PORT = process.env.PORT || 4000;
+ const port  = process.env.PORT || 4000;
  ///definiendo prinicpal
    app.get('/',(req,res)=>{
          res.send('Hola Mundo');
@@ -21,6 +22,6 @@ const  app = express();
 
  /////
 
- app.listen(PORT,()=>{
+ app.listen(port,'0.0.0.0',()=>{
         console.log('El servidro esta funcionando en el puerto--> ',PORT);
  })
