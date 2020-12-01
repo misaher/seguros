@@ -14,7 +14,7 @@ const  app = express();
  //....
 
 ///puerto d ela app
- const port  = process.env.PORT || 4000;
+ const port  = process.env.port || 4000;
  ///definiendo prinicpal
    app.get('/',(req,res)=>{
          res.send('Hola Mundo');
