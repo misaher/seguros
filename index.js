@@ -1,10 +1,13 @@
 const express = require('express');
 const conectaDB = require ('./config/db');
+const cors =  require('cors');
 
 ////
 const  app = express();
 /////Conectar a la base de Datos
     conectaDB();
+//// habilitar cors
+     app.use(cors());
  /// habilitando express . JSON
  app.use(express.json({extended: true}));
 
