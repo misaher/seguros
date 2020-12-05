@@ -9,5 +9,5 @@ const revisionControler  = require('../controlers/revisionControler');
 
 router.post('/',revisionControler.crearRevision)
 router.get('/',revisionControler.obtenerRegistros)
-
+router.put('/',revisionControler.actualizar)
 module.exports = router;

@@ -1,22 +1,27 @@
 const  mongoose =  require('mongoose');
 
 const  RevisionShema = mongoose.Schema({
-        idExam:{
+        idUsuario:{
             type: String,
             required: true,
             trim: true
         },
-        email:{
+        nombre_eval:{
         type: String,
         required: true,
         trim: true
        },
-         nombre:{
-        type: String,
+         evaluar:{
+        type: Boolean,
         required: true,
         trim: true
         },
-         calif:{
+         numero_pre:{
+          type: Number,
+          required: true,
+          trim: true
+          },
+         califiacion:{
             type: Number,
           required: true,
            trim: true

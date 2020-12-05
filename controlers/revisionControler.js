@@ -26,3 +26,22 @@ exports.obtenerRegistros = async (req, res)=>{
          res.status(400).send("Error al obtener información :( ");
    }
 }
+
+exports.actualizar = async (req,res)=>{
+      let {califica,id}= req.body;
+       console.log('califica-->',califica);
+       console.log('Id----->',id);
+      let revisar;
+      const nuevaRevision={};
+      nuevaRevision.evaluar= false;
+      nuevaRevision.califiacion= califica;
+          console.log();
+      try{
+            revisar= await Revision.findOneAndUpdate({idUsuario:id},nuevaRevision,{new: true});
+               if(revisar){
+            res.json({msg: "Datos Actualizados"})
+               }
+   }catch(e){
+      res.status(400).json({msg:'sin resultados'});
+   }     
+}

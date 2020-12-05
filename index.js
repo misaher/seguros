@@ -19,7 +19,7 @@ const  app = express();
  app.use('/api/revision',require('./routes/revision'))
  app.use('/api/usuarios',require('./routes/usuarios'))
  app.use('/api/auth',require('./routes/auth'))
-
+ app.use('/api/validaexam',require('./routes/validarExamen'))
  //....
 
 
