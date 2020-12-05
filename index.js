@@ -17,6 +17,8 @@ const  app = express();
  ///definiendo prinicpal
  /// para el ruteo...
  app.use('/api/revision',require('./routes/revision'))
+ app.use('/api/usuarios',require('./routes/usuarios'))
+ app.use('/api/auth',require('./routes/auth'))
 
  //....
 

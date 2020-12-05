@@ -1,5 +1,5 @@
 const mongoose  = require('mongoose');
- require('dotenv').config({path: '../variables.env'});
+ require('dotenv').config({path: 'variables.env'});
 
   const   conectaDB  = async ()=>{
        // console.log('Hola--->>>>>  :)',process.env.MONGO_DB);
