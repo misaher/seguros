@@ -9,7 +9,7 @@ const mongoose  = require('mongoose');
                                useUnifiedTopology: true,
                                useFindAndModify: false
                       });
-                       console.log('Base de datros conectada :) ');
+                       console.log('Base de datos conectada :) ');
           }catch(e){
                  console.log("Error :)" ,e);
                  process.exit(1);

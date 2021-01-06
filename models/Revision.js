@@ -6,6 +6,11 @@ const  RevisionShema = mongoose.Schema({
             required: true,
             trim: true
         },
+        email:{
+          type: String,
+          required: true,
+          trim: true
+        },
         nombre_eval:{
         type: String,
         required: true,

@@ -6,7 +6,7 @@ exports.validarExam = async (req,res)=>{
            console.log('Ok datos');
 
            const {id} =req.body;
-            console.log('Ok id------------->>>>>>>>',id);
+            //console.log('Ok id------------->>>>>>>>',id);
          let revision;
          ////guardar revisión 
           let  resultado =  await Revision.findOne({idUsuario:id,evaluar:true});
