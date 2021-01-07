@@ -10,4 +10,5 @@ router.put('/',usuarioController.actulizarUsuario);
 router.put('/resetPassword',usuarioController.resetPassword);
 router.delete('/',usuarioController.eliminarUsario);
 
+
 module.exports = router;

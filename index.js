@@ -23,6 +23,7 @@ const  app = express();
  app.use('/api/preguntas',require('./routes/preguntas'))
  app.use('/api/tipos',require('./routes/tipos'))
  app.use('/api/nombreexam',require('./routes/nombreexam'))
+ app.use('/api/respuestas',require('./routes/respuestas'))
  
 
 

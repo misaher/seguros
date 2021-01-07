@@ -8,6 +8,7 @@ const examController  = require('../controlers/examController');
 
 
 router.post('/',examController.validarExam)
-//router.get('/',revisionControler.obtenerRegistros)
+router.post('/obtenerexem',examController.validarExam2)
+router.get('/:email',examController.obtenerExamenes)
 
 module.exports = router;

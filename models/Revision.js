@@ -34,6 +34,10 @@ const  RevisionShema = mongoose.Schema({
         registro: {
             type: Date,
             default: Date.now()
+        },
+        envioExamen:{
+          type: String,
+          required: true,
         }
 
 })
