@@ -37,7 +37,7 @@ const  RevisionShema = mongoose.Schema({
         },
         envioExamen:{
           type: String,
-          required: true,
+          default:"",
         }
 
 })
