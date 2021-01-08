@@ -49,16 +49,17 @@ try{
 }
 
 exports.actualizar = async (req,res)=>{
-      let {califica,id}= req.body;
+      let {califica,id,envioExamen}= req.body;
        console.log('califica-->',califica);
        console.log('Id----->',id);
       let revisar;
       const nuevaRevision={};
       nuevaRevision.evaluar= false;
       nuevaRevision.califiacion= califica;
+      nuevaRevision.envioExamen= envioExamen;
           console.log();
       try{
-            revisar= await Revision.findOneAndUpdate({idUsuario:id},nuevaRevision,{new: true});
+            revisar= await Revision.findOneAndUpdate({_id:id},nuevaRevision,{new: true});
                if(revisar){
             res.json({msg: "Datos Actualizados"})
                }
