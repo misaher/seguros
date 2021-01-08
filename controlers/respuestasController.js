@@ -3,15 +3,9 @@ const Respuestas = require('../models/Respuestas');
 const { json } = require('express');
 
 exports.agregandoRespuestas = async (req,res) =>{
-      let arrS=[];
-      let resp={id:"1",res:"2"}
-      arrS.push(resp);
-      let datos=JSON.stringify(arrS);
-      let respt={ idExamen:"1HSH",respuestas:datos}
     try{
-          console.log("OK res--->>>")
-            console.log(respt);
-            tipos= new Respuestas(respt);
+            
+            tipos= new Respuestas(req.body);
               await tipos.save(); 
        // res.json({msg:'Respuestas guardadas:)'});
        res.json({msg:'Respuestas guardadas:)'});
